@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="hi">
-<head><meta charset="UTF-8"><title>शिक्षा | दैनिक न्यूज़ 360</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></head>
+<head>
+    <meta charset="UTF-8">
+    <title>शिक्षा | Dainik News 360</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 <body>
-<header class="top-header"><img src="logo.png" class="logo"><h1>शिक्षा समाचार</h1></header>
-<nav><a href="index-hi.html">होम</a><a href="education-hi.html" class="active">शिक्षा</a></nav>
+<header class="top-header">
+    <img src="logo.png" class="logo">
+    <h1>शिक्षा</h1>
+    <select class="lang-select" onchange="changeLang(this.value)">
+        <option value="education.html">English</option>
+        <option value="education-hi.html" selected>हिंदी</option>
+    </select>
+</header>
+<nav>
+    <a href="index-hi.html">होम</a>
+    <a href="politics-hi.html">राजनीति</a>
+    <a href="social-hi.html">सामाजिक</a>
+    <a href="education-hi.html" class="active">शिक्षा</a>
+    <a href="about.html-hi">हमारे बारे में</a>
+</nav>
 <div class="container">
-    <h2><i class="fas fa-book"></i> शैक्षणिक अपडेट</h2>
+    <h2><i class="fas fa-user-graduate"></i> शैक्षणिक अपडेट</h2>
     <div class="news-grid">
-        <div class="news-card"><div class="card-img"><i class="fas fa-user-graduate"></i></div><div class="card-body"><h3>बोर्ड परीक्षा की तारीखें</h3><p>मंत्रालय ने आगामी परीक्षाओं के लिए फाइनल टाइम-टेबल जारी किया।</p></div></div>
+        <div class="news-card">
+            <div class="card-img"><i class="fas fa-school"></i></div>
+            <div class="card-body">
+                <h3>बोर्ड परीक्षा की तारीखें</h3>
+                <p>मंत्रालय ने आगामी माध्यमिक बोर्ड परीक्षाओं के लिए अंतिम समय-सारणी (timetable) जारी कर दी है।</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <div class="card-img"><i class="fas fa-laptop-code"></i></div>
+            <div class="card-body">
+                <h3>स्कूलों में कोडिंग</h3>
+                <p>सरकार ने मिडिल स्कूल के छात्रों के लिए कोडिंग को एक अनिवार्य विषय के रूप में पेश किया है।</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <div class="card-img"><i class="fas fa-medal"></i></div>
+            <div class="card-body">
+                <h3>छात्रवृत्ति पंजीकरण शुरू</h3>
+                <p>STEM में उच्च शिक्षा प्राप्त करने वाले छात्रों के लिए नई राष्ट्रीय स्तर की छात्रवृत्तियां अब उपलब्ध हैं।</p>
+            </div>
+        </div>
     </div>
 </div>
 <script src="script.js"></script>
