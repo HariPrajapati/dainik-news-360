@@ -5,9 +5,25 @@
     <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-<header class="top-header"><img src="logo.png" class="logo"><h1>Social Issues</h1><select class="lang-select" onchange="changeLang(this.value)"><option value="social.html" selected>English</option><option value="social-hi.html">Hindi</option></select></header>
-<nav><a href="index.html">Home</a><a href="politics.html">Politics</a><a href="social.html" class="active">Social</a><a href="education.html">Education</a><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="admin.html">Admin</a></nav>
-<div class="container"><h2><i class="fas fa-hand-holding-heart"></i> Social Awareness</h2></div>
+<header class="top-header"><img src="logo.png" class="logo"><h1>Social Issues</h1><select class="lang-select" onchange="changeLang(this.value)"><option value="social.html">English</option><option value="social-hi.html">Hindi</option></select></header>
+<nav><a href="index.html">Home</a><a href="politics.html">Politics</a><a href="social.html" class="active">Social</a><a href="education.html">Education</a><a href="about.html">About Us</a></nav>
+<div class="container">
+    <h2><i class="fas fa-hand-holding-heart"></i> Social Awareness</h2>
+    <div class="news-grid">
+        <div class="news-card">
+            <div class="card-img"><i class="fas fa-tree"></i></div>
+            <div class="card-body"><h3>City Cleanliness Drive</h3><p>Join the local community this Sunday for the park restoration and tree planting event.</p></div>
+        </div>
+        <div class="news-card">
+            <div class="card-img"><i class="fas fa-user-shield"></i></div>
+            <div class="card-body"><h3>Women Safety Workshop</h3><p>NGOs are organizing self-defense workshops across 10 different locations next week.</p></div>
+        </div>
+        <div class="news-card">
+            <div class="card-img"><i class="fas fa-hospital"></i></div>
+            <div class="card-body"><h3>Health Camp</h3><p>Free health check-up camp for senior citizens scheduled for this Friday at the Community Hall.</p></div>
+        </div>
+    </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
