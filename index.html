@@ -1,63 +1,50 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dainik News 360</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"><title>Home | Dainik News 360</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-
 <header class="top-header">
-<img src="logo.png" class="logo">
-<div>
-<h1 id="title">दैनिक न्यूज़ 360</h1>
-<p id="tagline">राजनीति | समाज | जागरूकता</p>
-</div>
-
-<button onclick="toggleLang()" class="lang-btn">EN / हिंदी</button>
+    <img src="logo.png" class="logo">
+    <h1>Dainik News 360</h1>
+    <select class="lang-select" onchange="changeLang(this.value)">
+        <option value="index.html" selected>English</option>
+        <option value="index-hi.html">Hindi</option>
+    </select>
 </header>
-
-<div class="breaking">
-<span>Breaking News</span>
-<marquee id="breakingText">
-देश की बड़ी खबरें सबसे पहले | दैनिक न्यूज़ 360
-</marquee>
-</div>
-
 <nav>
-<a href="index.html">Home</a>
-<a href="#">Politics</a>
-<a href="#">Social</a>
-<a href="#">Education</a>
-<a href="about.html">About Us</a>
-<a href="admin.html">Admin</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="politics.html">Politics</a>
+    <a href="social.html">Social</a>
+    <a href="education.html">Education</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="admin.html">Admin</a>
 </nav>
-
-<!-- LIVE NEWS SLIDER -->
-<section class="slider">
-<div class="slide active">राजनीतिक हलचल तेज</div>
-<div class="slide">सामाजिक मुद्दों पर बड़ा फैसला</div>
-<div class="slide">शिक्षा नीति में बदलाव</div>
-</section>
-
-<section class="news-grid">
-<a href="post.html" class="news-card">
-<h3>राजनीति</h3>
-<p>सरकार से जुड़ी बड़ी खबर</p>
-</a>
-
-<a href="post.html" class="news-card">
-<h3>समाज</h3>
-<p>जनसमस्याओं पर रिपोर्ट</p>
-</a>
-</section>
-
-<footer>
-<p>© 2026 Dainik News 360</p>
-</footer>
-
+<div class="breaking"><span>LIVE UPDATES</span><marquee>New Economic Reform Passed | Local Schools to Reopen on Monday | Weather Alert: Heavy Rains Expected</marquee></div>
+<div class="container">
+    <h2><i class="fas fa-bolt"></i> Latest Headlines</h2>
+    <div class="news-grid">
+        <div class="news-card" onclick="window.location.href='post.html'">
+            <div class="card-img"><i class="fas fa-newspaper"></i></div>
+            <div class="card-body">
+                <h3>New Economic Policy Launched</h3>
+                <p>The government today unveiled a plan to boost local manufacturing and exports...</p>
+                <span class="read-more">Read Full News</span>
+            </div>
+        </div>
+        <div class="news-card" onclick="window.location.href='politics.html'">
+            <div class="card-img"><i class="fas fa-vote-yea"></i></div>
+            <div class="card-body">
+                <h3>Election Update</h3>
+                <p>Final counting of votes begins in the state assembly elections today...</p>
+                <span class="read-more">See Updates</span>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
